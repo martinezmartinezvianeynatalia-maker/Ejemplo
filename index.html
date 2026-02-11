@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Ejercicio de Estructura con Divs</title>
-<link rel="stylesheet" href="div.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Style | Estética Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="cabecera">
-<h1>Mi Sitio web Estructural</h1>
-</div>
 
-<div class="nav-bar">
-<a href="#">Inicio</a>
-<a href="#">Blog</a>
-<a href="biografia_amp.html">Contacto</a>
-</div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">GLOW & STYLE</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="contenedor-medio">
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Resalta tu Belleza Natural</h1>
+            <p>Expertos en cortes, color y cuidado de la piel.</p>
+            <a href="#contacto" class="btn">Reserva tu Cita</a>
+        </div>
+    </section>
 
-<div class="main-content">
-<h2>Contenido Principal</h2>
-<p>Este es el div principal.Aqui va la informacion mas importante de tu pagina.Al usar flexbox,este div se expande automaticamente para llenar el espacio-</p>
-</div>
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Corte y Estilo</h3>
+                <p>Tendencias modernas y clásicas adaptadas a tu rostro.</p>
+            </div>
+            <div class="service-card">
+                <h3>Colorimetría</h3>
+                <p>Balayage, luces y tintes con productos premium.</p>
+            </div>
+            <div class="service-card">
+                <h3>Tratamientos Faciales</h3>
+                <p>Limpieza profunda y rejuvenecimiento celular.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="lateral-derecha">
-<h3>Seccion Lateral</h3>
-<div class="articulo-mini">
-<p><strong>Articulo Destacado:</strong> Este contenido aparece a la derecha de la pantalla.</p>
-</div>
-</div>
-</div>
- <div class="pie-pagina">
- <p>&copy; 2026 - Todos los derechos reservados</p>
- 
- <div class="social-box">
- <span>Sigueme en:</span>
- <a href=#>FB</a>
- <a href=#>IG</a>
- <a href=#>YT</a>
- <a href=#>TK</a>
- </div>
- </div>
- </body>
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <div class="contact-info">
+            <p>📍 Calle Belleza 123, Ciudad Elegancia</p>
+            <p>📞 +52 123 456 7890</p>
+            <p>⏰ Lun - Sáb: 10:00 AM - 8:00 PM</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Glow & Style. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
 </html>
